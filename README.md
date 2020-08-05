@@ -1,11 +1,11 @@
-**_The Memory Management Landscape_**
-
+# _The Memory Management Landscape_
 
 
 ![Memory Map](MemoryMap.jpg "the memory map")
 
-The diagram above presents a conceptual map of the space of a variety of memory-management related projects from [the PLASMA @ UMass lab](https://plasma-umass.org/). This work is all joint with my colleagues and grad students (primarily Charlie Curtsinger, Kathryn McKinley, Gene Novark, Bobby Powers, and Ben Zorn).
+The diagram above presents a conceptual map of the space of a variety of memory-management related projects from [the PLASMA @ UMass lab](https://plasma-umass.org/). This work is all joint work with colleagues and grad students (primarily Charlie Curtsinger, Kathryn McKinley, Gene Novark, Bobby Powers, and Ben Zorn).
 
+-- Emery
 
 # 
 
@@ -20,7 +20,7 @@ The diagram above presents a conceptual map of the space of a variety of memory-
 
 ASPLOS 2000
 
-talk slides: [https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt](https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt), [SlideShare - low resolution](https://www.slideshare.net/emery/hoard-a-scalable-memory-allocator-for-multithreaded-applications)
+talk slides: [PowerPoint](https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt), [SlideShare - low resolution](https://www.slideshare.net/emery/hoard-a-scalable-memory-allocator-for-multithreaded-applications)
 
 [http://hoard.org/](http://hoard.org/)
 
@@ -47,7 +47,7 @@ source: [https://github.com/emeryberger/Hoard](https://github.com/emeryberger/Ho
 
 PLDI 2001
 
-talk slides: [https://www.slideshare.net/emery/composing-highperformance-memory-allocators-with-heap-layers](https://www.slideshare.net/emery/composing-highperformance-memory-allocators-with-heap-layers)
+talk slides: [SlideShare](https://www.slideshare.net/emery/composing-highperformance-memory-allocators-with-heap-layers)
 
 article by Andrei Alexandrescu: [https://github.com/emeryberger/Heap-Layers/raw/master/cuj-2005-12.pdf](https://github.com/emeryberger/Heap-Layers/raw/master/cuj-2005-12.pdf)
 
@@ -73,7 +73,7 @@ source: [https://github.com/emeryberger/Heap-Layers](https://github.com/emeryber
 
 OOPSLA 2002
 
-slides: [https://www.slideshare.net/emery/reconsidering-custom-memory-allocation](https://www.slideshare.net/emery/reconsidering-custom-memory-allocation)
+slides: [SlideShare](https://www.slideshare.net/emery/reconsidering-custom-memory-allocation)
 
 source code in Heap Layers repository
 
@@ -99,7 +99,9 @@ source code in Heap Layers repository
 
 PLDI 2019
 
-video of talk: [https://www.youtube.com/watch?v=c1UBJbfR-H0](https://www.youtube.com/watch?v=c1UBJbfR-H0) (Strange Loop 2019, Bobby Powers), [https://www.youtube.com/watch?v=XRAP3lBivYM](https://www.youtube.com/watch?v=XRAP3lBivYM) (CppCon 2019, Emery Berger)
+video of talk:
+* [Strange Loop 2019, Bobby Powers](https://www.youtube.com/watch?v=c1UBJbfR-H0)
+* [CppCon 2019, Emery Berger](https://www.youtube.com/watch?v=XRAP3lBivYM)
 
 source: [https://github.com/plasma-umass/mesh](https://github.com/plasma-umass/mesh)
 
@@ -126,7 +128,7 @@ source: [https://github.com/plasma-umass/mesh](https://github.com/plasma-umass/m
 
 PLDI 2006
 
-slides: [https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-for-unsafe-languages](https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-for-unsafe-languages), PPT source here: [http://www.cs.umass.edu/~emery/diehard/diehard-pldi06.ppt](http://www.cs.umass.edu/~emery/diehard/diehard-pldi06.ppt)
+slides: [SlideShare](https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-for-unsafe-languages), [PowerPoint](http://www.cs.umass.edu/~emery/diehard/diehard-pldi06.ppt)
 
 [https://github.com/emeryberger/DieHard](https://github.com/emeryberger/DieHard)
 
@@ -148,7 +150,7 @@ slides: [https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-fo
 
 ASPLOS 2008
 
-video of talk presentation by Gene Novark: [https://dl.acm.org/doi/10.1145/1353534.1346296](https://dl.acm.org/doi/10.1145/1353534.1346296)
+video : [ASPLOS presentation by Gene Novark](https://dl.acm.org/doi/10.1145/1353534.1346296)
 
 
 > Memory errors are a notorious source of security vulnerabilities that can lead to service interruptions, information leakage and unauthorized access. Because such errors are also difficult to debug, the absence of timely patches can leave users vulnerable to attack for long periods of time. A variety of approaches have been introduced to combat these errors, but these often incur large runtime overheads and generally abort on errors, threatening availability.
@@ -172,9 +174,9 @@ video of talk presentation by Gene Novark: [https://dl.acm.org/doi/10.1145/13535
 
 PLDI 2007 (CACM Research Highlight, 2008)
 
-Technical perspective by Martin Rinard: [https://cacm.acm.org/magazines/2008/12/4104-technical-perspective-patching-program-errors/fulltext](https://cacm.acm.org/magazines/2008/12/4104-technical-perspective-patching-program-errors/fulltext)
+[Technical perspective by Martin Rinard](https://cacm.acm.org/magazines/2008/12/4104-technical-perspective-patching-program-errors/fulltext)
 
-Slides: [https://www.slideshare.net/emery/exterminator-automatically-correcting-memory-errors-with-high-probability](https://www.slideshare.net/emery/exterminator-automatically-correcting-memory-errors-with-high-probability)
+Slides: [SlideShare](https://www.slideshare.net/emery/exterminator-automatically-correcting-memory-errors-with-high-probability)
 
 Source code in DieHard repo
 
@@ -195,12 +197,11 @@ Source code in DieHard repo
 
 CCS 2010
 
-Slides: [https://www.slideshare.net/emery/dieharder-ccs-2010-woot-2011](https://www.slideshare.net/emery/dieharder-ccs-2010-woot-2011)
+Slides: [SlideShare](https://www.slideshare.net/emery/dieharder-ccs-2010-woot-2011)
 
-video of talk at Microsoft Research: [https://www.microsoft.com/en-us/research/video/dieharder-securing-the-heap/](https://www.microsoft.com/en-us/research/video/dieharder-securing-the-heap/)
+[video of talk at Microsoft Research](https://www.microsoft.com/en-us/research/video/dieharder-securing-the-heap/)
 
 source in DieHard repo
-
 
 > Heap-based attacks depend on a combination of memory management errors and an exploitable memory allocator. Many allocators include ad hoc countermeasures against particular exploits, but their effectiveness against future exploits has been uncertain.
 >
@@ -224,9 +225,9 @@ source in DieHard repo
 
 ASPLOS 2013
 
-Slides: [https://www.slideshare.net/emery/stabilizer-statistically-sound-performance-evaluation](https://www.slideshare.net/emery/stabilizer-statistically-sound-performance-evaluation)
+Slides: [SlideShare](https://www.slideshare.net/emery/stabilizer-statistically-sound-performance-evaluation)
 
-See also this Strange Loop 2019 presentation (the first half): [https://www.youtube.com/watch?v=r-TLSBdHe1A](https://www.youtube.com/watch?v=r-TLSBdHe1A)
+See also [this Strange Loop 2019 presentation (the first half)](https://www.youtube.com/watch?v=r-TLSBdHe1A)
 
 Source code (note: bit rot means it no longer works with new versions of LLVM): [https://github.com/ccurtsinger/stabilizer](https://github.com/ccurtsinger/stabilizer)
 
