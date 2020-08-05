@@ -20,7 +20,7 @@ The diagram above presents a conceptual map of the space of a variety of memory-
 
 ASPLOS 2000
 
-talk slides: [https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt](https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt), [https://www.slideshare.net/emery/hoard-a-scalable-memory-allocator-for-multithreaded-applications](SlideShare - low resolution)
+talk slides: [https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt](https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt), [SlideShare - low resolution](https://www.slideshare.net/emery/hoard-a-scalable-memory-allocator-for-multithreaded-applications)
 
 [http://hoard.org/](http://hoard.org/)
 
