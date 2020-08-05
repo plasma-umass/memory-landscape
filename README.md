@@ -18,7 +18,7 @@ The diagram above presents a conceptual map of the space of a variety of memory-
 
 ### [Hoard: A Scalable Memory Allocator for Multithreaded Applications](https://people.cs.umass.edu/~emery/pubs/berger-asplos2000.pdf)
 
-ASPLOS 2000 (Most Influential Paper Award, 2019)
+ASPLOS 2000
 
 talk slides: [https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt](https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt)
 
@@ -27,7 +27,7 @@ talk slides: [https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/hom
 source: [https://github.com/emeryberger/Hoard](https://github.com/emeryberger/Hoard)
 
 
-> Parallel, multithreaded C and C++ programs such as web servers, database managers, news servers, and scientific applications are becoming increasingly prevalent. For these applications, the memory allocator is often a bottleneck that severely limits program performance and scalability on multiprocessor systems. Previous allocators suffer from problems that include poor performance and scalability, and heap organizations that introduce false sharing. Worse, many allocators exhibit a dramatic increase in memory consumption when confronted with a producer-consumer pattern of object allocation and freeing. This increase in memory consumption can range from a factor of P (the number of processors) to unbounded memory consumption.
+> **ASPLOS Most Influential Paper Award, 2019**: Parallel, multithreaded C and C++ programs such as web servers, database managers, news servers, and scientific applications are becoming increasingly prevalent. For these applications, the memory allocator is often a bottleneck that severely limits program performance and scalability on multiprocessor systems. Previous allocators suffer from problems that include poor performance and scalability, and heap organizations that introduce false sharing. Worse, many allocators exhibit a dramatic increase in memory consumption when confronted with a producer-consumer pattern of object allocation and freeing. This increase in memory consumption can range from a factor of P (the number of processors) to unbounded memory consumption.
 >
 >This paper introduces **Hoard**, a fast, highly scalable allocator that largely avoids false sharing and is memory efficient. Hoard is the first allocator to simultaneously solve the above problems. Hoard combines one global heap and per-processor heaps with a novel discipline that provably bounds memory consumption and has very low synchronization costs in the common case. Our results on eleven programs demonstrate that Hoard yields low average fragmentation and improves overall program performance over the standard Solaris allocator by up to a factor of 60 on 14 processors, and up to a factor of 18 over the next best allocator we tested.
 
@@ -78,7 +78,7 @@ slides: [https://www.slideshare.net/emery/reconsidering-custom-memory-allocation
 source code in Heap Layers repository
 
 
-> **_OOPSLA Most Influential Paper 2012**: Custom memory management is often used in systems software for the purpose of decreasing the cost of allocation and tightly controlling memory footprint of the software. Until 2002, it was taken for granted that application-specific memory allocators were superior to general purpose libraries. Berger, Zorn and McKinley’s paper demonstrated through a rigorous empirical study that this assumption is not well-founded, and gave insights into the reasons why general purpose allocators can outperform handcrafted ones. The paper also stands out for the quality of its empirical methodology.
+> **OOPSLA Most Influential Paper 2012**: Custom memory management is often used in systems software for the purpose of decreasing the cost of allocation and tightly controlling memory footprint of the software. Until 2002, it was taken for granted that application-specific memory allocators were superior to general purpose libraries. Berger, Zorn and McKinley’s paper demonstrated through a rigorous empirical study that this assumption is not well-founded, and gave insights into the reasons why general purpose allocators can outperform handcrafted ones. The paper also stands out for the quality of its empirical methodology.
 
 
 *   detailed empirical study intended to answer the question, do custom memory allocators improve performance?
@@ -247,4 +247,4 @@ Source code (note: bit rot means it no longer works with new versions of LLVM): 
 
 [Probabilistic Timing Analysis on Conventional Cache Designs](https://past.date-conference.com/proceedings-archive/2017/pyear/PAPERS/2013/DATE13/PDFFILES/IP2_13.PDF), DATE 2013
 
-> These papers show that using randomization of memory layouts - either in software or the hardware - can lead to predictable and analyzable _worst-case _performance (probabilistic worst-case execution time) by using Extreme Value Theory (in the same way that Stabilizer showed that it can lead to predictable _average-case _performance by leveraging the Central Limit Theorem).
+> These papers show that using randomization of memory layouts - either in software or the hardware - can lead to predictable and analyzable **worst-case** performance (probabilistic worst-case execution time) by using Extreme Value Theory (in the same way that Stabilizer showed that it can lead to predictable **average-case** performance by leveraging the Central Limit Theorem).
