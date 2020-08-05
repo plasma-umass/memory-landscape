@@ -7,21 +7,13 @@
 The diagram above presents a conceptual map of the space of a variety of memory-management related projects from [the PLASMA @ UMass lab](https://plasma-umass.org/). This work is all joint with my colleagues and grad students (primarily Charlie Curtsinger, Kathryn McKinley, Gene Novark, Bobby Powers, and Ben Zorn).
 
 
-
-**Table of Contents**
-
-
-[TOC]
-
-
-
 # 
 
 
-# Performance {#performance}
+# Performance
 
 
-## Making `malloc` scale {#making-malloc-scale}
+## Making `malloc` scale
 
 
 ### [Hoard: A Scalable Memory Allocator for Multithreaded Applications](https://people.cs.umass.edu/~emery/pubs/berger-asplos2000.pdf) {#hoard-a-scalable-memory-allocator-for-multithreaded-applications}
@@ -35,11 +27,7 @@ talk slides: [https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/hom
 source: [https://github.com/emeryberger/Hoard](https://github.com/emeryberger/Hoard)
 
 
-    **_abstract: Parallel, multithreaded C and C++ programs such as web servers, database managers, news servers, and scientific applications are becoming increasingly prevalent. For these applications, the memory allocator is often a bottleneck that severely limits program performance and scalability on multiprocessor systems. Previous allocators suffer from problems that include poor performance and scalability, and heap organizations that introduce false sharing. Worse, many allocators exhibit a dramatic increase in memory consumption when confronted with a producer-consumer pattern of object allocation and freeing. This increase in memory consumption can range from a factor of P (the number of processors) to unbounded_**
-
-
-    _memory consumption._
-
+    **abstract**: _Parallel, multithreaded C and C++ programs such as web servers, database managers, news servers, and scientific applications are becoming increasingly prevalent. For these applications, the memory allocator is often a bottleneck that severely limits program performance and scalability on multiprocessor systems. Previous allocators suffer from problems that include poor performance and scalability, and heap organizations that introduce false sharing. Worse, many allocators exhibit a dramatic increase in memory consumption when confronted with a producer-consumer pattern of object allocation and freeing. This increase in memory consumption can range from a factor of P (the number of processors) to unbounded memory consumption._
 
     _This paper introduces **Hoard**, a fast, highly scalable allocator that largely avoids false sharing and is memory efficient. Hoard is the first allocator to simultaneously solve the above problems. Hoard combines one global heap and per-processor heaps with a novel discipline that provably bounds memory consumption and has very low synchronization costs in the common case. Our results on eleven programs demonstrate that Hoard yields low average fragmentation and improves overall program performance over the standard Solaris allocator by up to a factor of 60 on 14 processors, and up to a factor of 18 over the next best allocator we tested._
 
@@ -53,8 +41,7 @@ source: [https://github.com/emeryberger/Hoard](https://github.com/emeryberger/Ho
 
 
 
-
-## Heap Layers: building high-performance allocators {#heap-layers-building-high-performance-allocators}
+## Heap Layers: building high-performance allocators
 
 
 ### [Composing High-Performance Memory Allocators](https://people.cs.umass.edu/~emery/pubs/berger-pldi2001.pdf) (Heap Layers) {#composing-high-performance-memory-allocators-heap-layers}
@@ -81,10 +68,10 @@ source: [https://github.com/emeryberger/Heap-Layers](https://github.com/emeryber
 *   I re-wrote Hoard to use Heap Layers (resulting in an immediate 15% perf improvement with no algorithmic changes); all subsequent allocator work described below also uses Heap Layers
 
 
-## Reaps + empirical analysis of custom allocators {#reaps-empirical-analysis-of-custom-allocators}
+## Reaps + empirical analysis of custom allocators
 
 
-### [Reconsidering Custom Memory Allocation](https://people.cs.umass.edu/~emery/pubs/berger-oopsla2002.pdf) {#reconsidering-custom-memory-allocation}
+### [Reconsidering Custom Memory Allocation](https://people.cs.umass.edu/~emery/pubs/berger-oopsla2002.pdf)
 
 OOPSLA 2002
 
@@ -109,10 +96,10 @@ _**
 ## 
 
 
-## Compacting memory allocation for C/C++ (!) {#compacting-memory-allocation-for-c-c}
+## Compacting memory allocation for C/C++ (!)
 
 
-### [Mesh: compacting memory management for C/C++ applications](https://people.cs.umass.edu/~mcgregor/papers/19-pldi.pdf) {#mesh-compacting-memory-management-for-c-c-applications}
+### [Mesh: compacting memory management for C/C++ applications](https://people.cs.umass.edu/~mcgregor/papers/19-pldi.pdf)
 
 PLDI 2019
 
@@ -135,13 +122,13 @@ source: [https://github.com/plasma-umass/mesh](https://github.com/plasma-umass/m
 # 
 
 
-# Fault tolerant heaps {#fault-tolerant-heaps}
+# Fault tolerant heaps
 
 
-## Improving reliability in the face of user memory errors (buffer overflows, use-after-free) via a randomizing allocator {#improving-reliability-in-the-face-of-user-memory-errors-buffer-overflows-use-after-free-via-a-randomizing-allocator}
+## Improving reliability in the face of user memory errors (buffer overflows, use-after-free) via a randomizing allocator
 
 
-### [DieHard: Probabilistic Memory Safety for Unsafe Languages](https://people.cs.umass.edu/~emery/pubs/fp014-berger.pdfhttps://people.cs.umass.edu/~emery/pubs/fp014-berger.pdf) {#diehard-probabilistic-memory-safety-for-unsafe-languages}
+### [DieHard: Probabilistic Memory Safety for Unsafe Languages](https://people.cs.umass.edu/~emery/pubs/fp014-berger.pdfhttps://people.cs.umass.edu/~emery/pubs/fp014-berger.pdf)
 
 PLDI 2006
 
@@ -161,10 +148,10 @@ slides: [https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-fo
 *   as stated above, directly influenced several allocators implemented by Microsoft (where I have spent numerous summers as a visiting researcher)
 
 
-## Extreme fault tolerance {#extreme-fault-tolerance}
+## Extreme fault tolerance
 
 
-### [Archipelago: Trading Address Space for Reliability and Security](https://people.cs.umass.edu/~emery/pubs/asplos147-lvin.pdf) {#archipelago-trading-address-space-for-reliability-and-security}
+### [Archipelago: Trading Address Space for Reliability and Security](https://people.cs.umass.edu/~emery/pubs/asplos147-lvin.pdf)
 
 ASPLOS 2008
 
@@ -184,13 +171,13 @@ video of talk presentation by Gene Novark: [https://dl.acm.org/doi/10.1145/13535
 *   Not great for CPU intensive apps! But it works fine for servers that are mostly I/O-bound
 
 
-# Bug-Fixing heaps {#bug-fixing-heaps}
+# Bug-Fixing heaps
 
 
-## Automatically correcting memory errors {#automatically-correcting-memory-errors}
+## Automatically correcting memory errors
 
 
-### [Exterminator: Automatically Correcting Memory Errors with High Probability](https://people.cs.umass.edu/~emery/pubs/pldi028-novark.pdf) {#exterminator-automatically-correcting-memory-errors-with-high-probability}
+### [Exterminator: Automatically Correcting Memory Errors with High Probability](https://people.cs.umass.edu/~emery/pubs/pldi028-novark.pdf)
 
 PLDI 2007 (CACM Research Highlight, 2008)
 
@@ -212,10 +199,10 @@ Source code in DieHard repo
 *   you can do statistical inference over the heap contents to pinpoint the kind and source of errors, and then synthesize patches - payloads that the allocator uses for subsequent allocations - that repair the error
 
 
-# Secure memory allocation {#secure-memory-allocation}
+# Secure memory allocation
 
 
-### [DieHarder: Securing the Heap](https://people.cs.umass.edu/~emery/pubs/ccs03-novark.pdf) {#dieharder-securing-the-heap}
+### [DieHarder: Securing the Heap](https://people.cs.umass.edu/~emery/pubs/ccs03-novark.pdf)
 
 CCS 2010
 
@@ -240,13 +227,13 @@ source in DieHard repo
 *   the analysis and design of DieHarder directly influenced design decisions made in the Windows 8 heap
 
 
-# Performance analyzability {#performance-analyzability}
+# Performance analyzability
 
 
-## Sound performance analysis {#sound-performance-analysis}
+## Sound performance analysis
 
 
-### [Stabilizer: Statistically Sound Performance Evaluation](http://www.cs.umass.edu/~emery/pubs/stabilizer-asplos13.pdf) {#stabilizer-statistically-sound-performance-evaluation}
+### [Stabilizer: Statistically Sound Performance Evaluation](http://www.cs.umass.edu/~emery/pubs/stabilizer-asplos13.pdf)
 
 ASPLOS 2013
 
@@ -267,7 +254,7 @@ Source code (note: bit rot means it no longer works with new versions of LLVM): 
 *   we use this to see if -O3 actually has a statistically significant impact on a range of programs, vs. -O2. it doesn't.
 
 
-## Randomness for performance prediction {#randomness-for-performance-prediction}
+## Randomness for performance prediction
 
 [Using Randomized Caches in Probabilistic Real-Time Systems](https://people.cs.umass.edu/~emery/pubs/ecrts09.pdf), ECRTS 2009
 
