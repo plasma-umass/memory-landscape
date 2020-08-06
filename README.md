@@ -106,9 +106,12 @@ PLDI 2019
 
 video of talk:
 * [Strange Loop 2019, Bobby Powers](https://www.youtube.com/watch?v=c1UBJbfR-H0)
-* [CppCon 2019, Emery Berger](https://www.youtube.com/watch?v=XRAP3lBivYM)
 
 [![Mesh, Strange Loop 2019](images/mesh-strangeloop.png)](https://www.youtube.com/watch?v=c1UBJbfR-H0)
+
+* [CppCon 2019, Emery Berger](https://www.youtube.com/watch?v=XRAP3lBivYM)
+
+[![Mesh, CppCon 2019](images/mesh-cppcon.png)](https://www.youtube.com/watch?v=XRAP3lBivYM)
 
 source: [https://github.com/plasma-umass/mesh](https://github.com/plasma-umass/mesh)
 
