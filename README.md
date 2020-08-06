@@ -183,6 +183,8 @@ PLDI 2007 (CACM Research Highlight, 2008)
 
 Slides: [SlideShare](https://www.slideshare.net/emery/exterminator-automatically-correcting-memory-errors-with-high-probability)
 
+[![Exterminator talk slides](images/exterminator-slide.png)](https://www.slideshare.net/emery/exterminator-automatically-correcting-memory-errors-with-high-probability)
+
 Source code in DieHard repo
 
 
