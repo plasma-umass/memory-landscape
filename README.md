@@ -216,9 +216,7 @@ CCS 2010
 
 Slides: [SlideShare](https://www.slideshare.net/emery/dieharder-ccs-2010-woot-2011)
 
-[![DieHarder talk slides](images/dieharder-slide.png)](https://www.slideshare.net/emery/dieharder-ccs-2010-woot-2011)
-
-[video of talk at Microsoft Research](https://www.microsoft.com/en-us/research/video/dieharder-securing-the-heap/)
+[![DieHard talk at Microsoft Research](images/dieharder-slide.png)](https://youtu.be/mqTgGUtwHLU)
 
 source in DieHard repo
 
