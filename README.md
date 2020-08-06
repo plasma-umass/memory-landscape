@@ -246,7 +246,9 @@ Slides: [SlideShare](https://www.slideshare.net/emery/stabilizer-statistically-s
 
 [![Stabilizer talk slides](images/stabilizer-slide.png)](https://www.slideshare.net/emery/stabilizer-statistically-sound-performance-evaluation)
 
-See also [this Strange Loop 2019 presentation (the first half)](https://www.youtube.com/watch?v=r-TLSBdHe1A)
+See also [this Strange Loop 2019 presentation by Emery Berger](https://www.youtube.com/watch?v=r-TLSBdHe1A)
+
+[![Performance Matters talk slides](images/perfmatters.png)](https://www.youtube.com/watch?v=r-TLSBdHe1A)
 
 Source code (note: bit rot means it no longer works with new versions of LLVM): [https://github.com/ccurtsinger/stabilizer](https://github.com/ccurtsinger/stabilizer)
 
