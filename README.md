@@ -89,9 +89,9 @@ source (in Heap Layers repo): [https://github.com/emeryberger/Heap-Layers](https
 *   detailed empirical study intended to answer the question, do custom memory allocators improve performance?
 *   compared to general-purpose allocators via API-compatible wrappers written with Heap Layers
 *   results:
-*   most custom allocators did not deliver when compared to a state-of-the-art general-purpose allocator (at the time, the Lea allocator, a variant of which is in GNU libc to this day)
-*   exception: regions (a.k.a. arenas, pools). Regions in principle can achieve asymptotic improvements (O(1) or O(log n) frees instead of O(n)), and allocation is fast. However, memory waste also can be high (when a few objects tie down the whole region)
-*   new region-heap hybrid: _reaps_. bump pointer allocation augmented with a freelist. allows for fast reclamation en masse, fast allocation, and still enables reuse. Algorithm rolled into Hoard.
+    -   most custom allocators did not deliver when compared to a state-of-the-art general-purpose allocator (at the time, the Lea allocator, a variant of which is in GNU libc to this day)
+    -   exception: regions (a.k.a. arenas, pools). Regions in principle can achieve asymptotic improvements (O(1) or O(log n) frees instead of O(n)), and allocation is fast. However, memory waste also can be high (when a few objects tie down the whole region)
+    -   new region-heap hybrid: _reaps_. bump pointer allocation augmented with a freelist. allows for fast reclamation en masse, fast allocation, and still enables reuse. Algorithm rolled into Hoard.
 
 
 ## 
