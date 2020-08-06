@@ -57,7 +57,6 @@ talk slides: [SlideShare](https://www.slideshare.net/emery/composing-highperform
 
 source: [https://github.com/emeryberger/Heap-Layers](https://github.com/emeryberger/Heap-Layers)
 
-
 > Current general-purpose memory allocators do not provide sufficient speed or flexibility for modern high-performance applications. Highly-tuned general purpose allocators have per-operation costs around one hundred cycles, while the cost of an operation in a custom memory allocator can be just a handful of cycles. To achieve high performance, programmers often write custom memory allocators from scratch – a difficult and error-prone process.
 >
 > In this paper, we present a flexible and efficient infrastructure for building memory allocators that is based on C++ templates and inheritance. This novel approach allows programmers to build custom and general-purpose allocators as “**heap layers**” that can be composed without incurring any additional runtime overhead or additional programming cost. We show that this infrastructure simplifies allocator construction and results in allocators that either match or improve the performance of heavily-tuned allocators written in C, including the Kingsley allocator and the GNU obstack library. We further show this infrastructure can be used to rapidly build a general-purpose allocator that has performance comparable to the Lea allocator, one of the best uniprocessor allocators available. We thus demonstrate a clean, easy-to-use allocator interface that seamlessly combines the power and efficiency of any number of general and custom allocators within a single application._
@@ -79,7 +78,9 @@ OOPSLA 2002
 
 slides: [SlideShare](https://www.slideshare.net/emery/reconsidering-custom-memory-allocation)
 
-source code in Heap Layers repository
+[![Reconsidering talk slides](images/reconsidering-slide.png)](https://www.slideshare.net/emery/reconsidering-custom-memory-allocation)
+
+source (in Heap Layers repo): [https://github.com/emeryberger/Heap-Layers](https://github.com/emeryberger/Heap-Layers)
 
 
 > **OOPSLA Most Influential Paper 2012**: Custom memory management is often used in systems software for the purpose of decreasing the cost of allocation and tightly controlling memory footprint of the software. Until 2002, it was taken for granted that application-specific memory allocators were superior to general purpose libraries. Berger, Zorn and McKinley’s paper demonstrated through a rigorous empirical study that this assumption is not well-founded, and gave insights into the reasons why general purpose allocators can outperform handcrafted ones. The paper also stands out for the quality of its empirical methodology.
