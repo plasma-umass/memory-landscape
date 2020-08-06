@@ -22,6 +22,8 @@ ASPLOS 2000
 
 talk slides: [PowerPoint](https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt), [SlideShare - low resolution](https://www.slideshare.net/emery/hoard-a-scalable-memory-allocator-for-multithreaded-applications)
 
+[![Hoard talk slides](images/hoard-slide.png)](https://www.slideshare.net/emery/hoard-a-scalable-memory-allocator-for-multithreaded-applications)
+
 [http://hoard.org/](http://hoard.org/)
 
 source: [https://github.com/emeryberger/Hoard](https://github.com/emeryberger/Hoard)
