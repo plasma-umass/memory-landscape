@@ -135,6 +135,9 @@ PLDI 2006
 
 slides: [SlideShare](https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-for-unsafe-languages), [PowerPoint](http://www.cs.umass.edu/~emery/diehard/diehard-pldi06.ppt)
 
+[![DieHard talk slides](images/diehard-slide.png)](https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-for-unsafe-languages)
+
+
 [https://github.com/emeryberger/DieHard](https://github.com/emeryberger/DieHard)
 
 
@@ -205,6 +208,8 @@ Source code in DieHard repo
 CCS 2010
 
 Slides: [SlideShare](https://www.slideshare.net/emery/dieharder-ccs-2010-woot-2011)
+
+[![DieHarder talk slides](images/dieharder-slide.png)](https://www.slideshare.net/emery/dieharder-ccs-2010-woot-2011)
 
 [video of talk at Microsoft Research](https://www.microsoft.com/en-us/research/video/dieharder-securing-the-heap/)
 
