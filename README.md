@@ -51,6 +51,8 @@ PLDI 2001
 
 talk slides: [SlideShare](https://www.slideshare.net/emery/composing-highperformance-memory-allocators-with-heap-layers)
 
+[![Heap Layers talk slides](images/heaplayers-slide.png)](https://www.slideshare.net/emery/composing-highperformance-memory-allocators-with-heap-layers)
+
 [article by Andrei Alexandrescu, _C/C++ Users Journal_, 2005](https://github.com/emeryberger/Heap-Layers/raw/master/cuj-2005-12.pdf)
 
 source: [https://github.com/emeryberger/Heap-Layers](https://github.com/emeryberger/Heap-Layers)
