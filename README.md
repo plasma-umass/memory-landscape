@@ -165,6 +165,8 @@ ASPLOS 2008
 
 video : [ASPLOS presentation by Gene Novark](https://dl.acm.org/doi/10.1145/1353534.1346296)
 
+[![Archipelago, ASPLOS](images/archipelago-talk.png)](https://dl.acm.org/doi/10.1145/1353534.1346296)
+
 
 > Memory errors are a notorious source of security vulnerabilities that can lead to service interruptions, information leakage and unauthorized access. Because such errors are also difficult to debug, the absence of timely patches can leave users vulnerable to attack for long periods of time. A variety of approaches have been introduced to combat these errors, but these often incur large runtime overheads and generally abort on errors, threatening availability.
 >
