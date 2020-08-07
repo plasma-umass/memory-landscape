@@ -24,6 +24,10 @@ talk slides: [PowerPoint](https://people.cs.umass.edu/~emery/classes/CMPSCI691P-
 
 [![Hoard talk slides](images/hoard-slide.png)](https://www.slideshare.net/emery/hoard-a-scalable-memory-allocator-for-multithreaded-applications)
 
+Video: _Memory Management for High-Performance Applications_, Emery Berger (covers Hoard, Heap Layers, and Reconsidering Custom Memory Allocation)
+
+[![Video: Memory Management for High-Performance Applications, Emery Berger](images/upc2005-slide.png)(https://vimeo.com/37143033)
+
 [http://hoard.org/](http://hoard.org/)
 
 source: [https://github.com/emeryberger/Hoard](https://github.com/emeryberger/Hoard)
