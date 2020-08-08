@@ -261,7 +261,7 @@ Source code (note: bit rot means it no longer works with new versions of LLVM): 
 
 *   performance can be dramatically impacted by where things end up in memory (globals, stack, heap, and code) because caches and so on depend on memory addresses
 *   this means a performance regression or an improvement might be a complete accident which will go away if you add one more line of code or one more malloc (or even change environment variables!)
-*   Stabilizer repeatedly randomizes memory layout of running programs - including a heap allocator that shuffles pointers using an incremental variant of the Fisher-Yates shuffle. This repeated randomization makes execution times independent of layout, letting us do sound statistical analysis of performance
+*   Stabilizer repeatedly randomizes memory layout of running programs - including a heap allocator that shuffles pointers using an incremental variant of the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle). This repeated randomization makes execution times independent of layout, letting us do sound statistical analysis of performance
 *   we use this to see if -O3 actually has a statistically significant impact on a range of programs, vs. -O2. it doesn't.
 
 
