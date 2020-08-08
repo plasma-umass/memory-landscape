@@ -3,7 +3,7 @@
 
 ![Memory Map](MemoryMap.jpg "the memory map")
 
-The diagram above presents a conceptual map of the space of a variety of memory-management related projects from [the PLASMA @ UMass lab](https://plasma-umass.org/). This work is all joint work with colleagues and grad students (primarily [Charlie Curtsinger](https://curtsinger.cs.grinnell.edu/), [Kathryn McKinley](https://www.cs.utexas.edu/~mckinley/), [Gene Novark](https://www.linkedin.com/in/gene-novark-183a4b20), [Bobby Powers](https://bpowers.net/), and [Ben Zorn](https://www.microsoft.com/en-us/research/people/zorn/)).
+The diagram above presents a conceptual map of the memory-management related projects from [the PLASMA @ UMass lab](https://plasma-umass.org/). This work is all joint work with colleagues and grad students (primarily [Charlie Curtsinger](https://curtsinger.cs.grinnell.edu/), [Kathryn McKinley](https://www.cs.utexas.edu/~mckinley/), [Gene Novark](https://www.linkedin.com/in/gene-novark-183a4b20), [Bobby Powers](https://bpowers.net/), and [Ben Zorn](https://www.microsoft.com/en-us/research/people/zorn/)).
 
 -- [Emery](https://emeryberger.com/)
 
