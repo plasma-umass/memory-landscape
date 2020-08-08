@@ -41,7 +41,7 @@ source: [https://github.com/emeryberger/Hoard](https://github.com/emeryberger/Ho
 *   first truly scalable (general-purpose) memory allocator for multiple CPUs
 *   provably limits excess memory (_blowup_)
 *   acts to prevent false sharing
-*   algorithm incorporated into Mac OS X allocator and IBM allocator (with lock-free extensions)
+*   algorithm incorporated into [Mac OS X allocator](https://opensource.apple.com/source/libmalloc/libmalloc-283.100.6/src/magazine_malloc.c.auto.html) and IBM allocator (with lock-free extensions)
 *   in continuous development since 1999, continues to be one of fastest general-purpose allocators
 
 
