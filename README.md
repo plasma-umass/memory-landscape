@@ -146,6 +146,8 @@ slides: [SlideShare](https://www.slideshare.net/emery/diehard-probabilistic-memo
 
 [![DieHard talk slides](images/diehard-slide.png)](https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-for-unsafe-languages)
 
+[Video whiteboard interview of Ben Zorn discussing DieHard and RobustHeap](https://channel9.msdn.com/blogs/peli/ben-zorn-memory-robustness-with-robustheap)
+
 [https://github.com/emeryberger/DieHard](https://github.com/emeryberger/DieHard)
 
 
