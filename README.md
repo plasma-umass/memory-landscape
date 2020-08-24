@@ -20,6 +20,8 @@ The diagram above presents a conceptual map of the memory-management related pro
 
 ASPLOS 2000
 
+> TL;DR - first truly scalable `malloc`
+
 talk slides: [PowerPoint](https://people.cs.umass.edu/~emery/classes/CMPSCI691P-Fall2002/homework/berger-asplos2000/hoard-presentation.ppt), [SlideShare - low resolution](https://www.slideshare.net/emery/hoard-a-scalable-memory-allocator-for-multithreaded-applications)
 
 [![Hoard talk slides](images/hoard-slide.png)](https://www.slideshare.net/emery/hoard-a-scalable-memory-allocator-for-multithreaded-applications)
@@ -53,6 +55,8 @@ source: [https://github.com/emeryberger/Hoard](https://github.com/emeryberger/Ho
 
 PLDI 2001
 
+> TL;DR - introduces Heap Layers, fast and flexible infrastructure for building allocators
+
 talk slides: [SlideShare](https://www.slideshare.net/emery/composing-highperformance-memory-allocators-with-heap-layers)
 
 [![Heap Layers talk slides](images/heaplayers-slide.png)](https://www.slideshare.net/emery/composing-highperformance-memory-allocators-with-heap-layers)
@@ -79,6 +83,8 @@ source: [https://github.com/emeryberger/Heap-Layers](https://github.com/emeryber
 ### [Reconsidering Custom Memory Allocation](https://people.cs.umass.edu/~emery/pubs/berger-oopsla2002.pdf)
 
 OOPSLA 2002
+
+> TL;DR - empirical study showing most custom allocators are a waste of time and space
 
 slides: [SlideShare](https://www.slideshare.net/emery/reconsidering-custom-memory-allocation)
 
@@ -107,6 +113,8 @@ source (in Heap Layers repo): [https://github.com/emeryberger/Heap-Layers](https
 ### [Mesh: compacting memory management for C/C++ applications](https://people.cs.umass.edu/~mcgregor/papers/19-pldi.pdf)
 
 PLDI 2019
+
+> TL;DR - plug-in `malloc` that compacts memory safely in C/C++, where this was thought to be impossible
 
 video of talk:
 * [Strange Loop 2019, Bobby Powers](https://www.youtube.com/watch?v=c1UBJbfR-H0)
@@ -142,6 +150,8 @@ source: [https://github.com/plasma-umass/mesh](https://github.com/plasma-umass/m
 
 PLDI 2006
 
+> TL;DR - a `malloc` that makes programs with memory errors likely to work
+
 slides: [SlideShare](https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-for-unsafe-languages), [PowerPoint](http://www.cs.umass.edu/~emery/diehard/diehard-pldi06.ppt)
 
 [![DieHard talk slides](images/diehard-slide.png)](https://www.slideshare.net/emery/diehard-probabilistic-memory-safety-for-unsafe-languages)
@@ -167,6 +177,8 @@ slides: [SlideShare](https://www.slideshare.net/emery/diehard-probabilistic-memo
 ### [Archipelago: Trading Address Space for Reliability and Security](https://people.cs.umass.edu/~emery/pubs/asplos147-lvin.pdf)
 
 ASPLOS 2008
+
+> TL;DR - DieHard on steroids: uses virtual memory to effectively isolate all objects
 
 video : [ASPLOS presentation by Gene Novark](https://dl.acm.org/doi/10.1145/1353534.1346296)
 
@@ -194,6 +206,8 @@ video : [ASPLOS presentation by Gene Novark](https://dl.acm.org/doi/10.1145/1353
 
 PLDI 2007 (CACM Research Highlight, 2008)
 
+> TL;DR - uses statistical inference to isolate and repair memory errors
+
 [Technical perspective by Martin Rinard](https://cacm.acm.org/magazines/2008/12/4104-technical-perspective-patching-program-errors/fulltext)
 
 Slides: [SlideShare](https://www.slideshare.net/emery/exterminator-automatically-correcting-memory-errors-with-high-probability)
@@ -217,6 +231,8 @@ Source code in DieHard repo
 ### [DieHarder: Securing the Heap](https://people.cs.umass.edu/~emery/pubs/ccs03-novark.pdf)
 
 CCS 2010
+
+> TL;DR - A secure `malloc` that is resilient to a variety of attacks
 
 Slides: [SlideShare](https://www.slideshare.net/emery/dieharder-ccs-2010-woot-2011)
 
@@ -246,6 +262,8 @@ source in DieHard repo: [https://github.com/emeryberger/DieHard](https://github.
 
 ASPLOS 2013
 
+> TL;DR - repeatedly randomizing objects in memory enables sound performance analysis
+
 Slides: [SlideShare](https://www.slideshare.net/emery/stabilizer-statistically-sound-performance-evaluation)
 
 [![Stabilizer talk slides](images/stabilizer-slide.png)](https://www.slideshare.net/emery/stabilizer-statistically-sound-performance-evaluation)
@@ -272,5 +290,7 @@ Source code (note: bit rot means it no longer works with new versions of LLVM): 
 [PROARTIS: Probabilistically Analysable Real-Time Systems](https://people.cs.umass.edu/~emery/pubs/PROARTIS-TECS.pdf), TECS 2013
 
 [Probabilistic Timing Analysis on Conventional Cache Designs](https://past.date-conference.com/proceedings-archive/2017/pyear/PAPERS/2013/DATE13/PDFFILES/IP2_13.PDF), DATE 2013
+
+> TL;DR - randomization of layout makes it possible to soundly bound probabilistic worst-case execution time
 
 > These papers show that using randomization of memory layouts - either in software or the hardware - can lead to predictable and analyzable **worst-case** performance (probabilistic worst-case execution time) by using [Extreme Value Theory](https://en.wikipedia.org/wiki/Extreme_value_theory) (in the same way that Stabilizer showed that it can lead to predictable **average-case** performance by leveraging the [Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)).
