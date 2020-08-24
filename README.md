@@ -132,7 +132,7 @@ source: [https://github.com/plasma-umass/mesh](https://github.com/plasma-umass/m
 
 
 *   in theory, you can't compact memory in C/C++ programs, because you can't relocate objects (since you can't tell what a pointer is, you can't adjust pointers)
-*   BUT: you can compact memory _physically_ (reducing footprint) without altering _virtual _addresses
+*   BUT: you can compact memory _physically_ (reducing footprint) without altering _virtual_ addresses
 *   to avoid pathological cases, use a fast O(1) randomizing allocator with _shuffle vectors_ that randomly distribute objects on a full page (contrast with DieHard and friends, which require extra memory to operate efficiently)
 *   it's fast, scalable, and saves memory automagically
 *   segregates metadata from the heap, which also improves locality - each cache line basically only contains data
