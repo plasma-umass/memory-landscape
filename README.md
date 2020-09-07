@@ -104,7 +104,7 @@ source (in Heap Layers repo): [https://github.com/emeryberger/Heap-Layers](https
     -   most custom allocators did not deliver when compared to a state-of-the-art general-purpose allocator (at the time, the Lea allocator, a variant of which is in GNU libc to this day)
     -   exception: regions (a.k.a. arenas, pools). Regions in principle can achieve asymptotic improvements (O(1) or O(log n) frees instead of O(n)), and allocation is fast. However, memory waste also can be high (when a few objects tie down the whole region)
     -   new region-heap hybrid: _reaps_. bump pointer allocation augmented with a freelist. allows for fast reclamation en masse, fast allocation, and still enables reuse. Algorithm rolled into Hoard.
-
+* cited by members of the C++ Standards Committee to support the incorporation of polymorphic memory resource (std::pmr) allocators into the C++17 standard library
 
 ## 
 
