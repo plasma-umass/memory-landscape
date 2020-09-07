@@ -18,7 +18,7 @@ The diagram above presents a conceptual map of the memory-management related pro
 
 ### [Hoard: A Scalable Memory Allocator for Multithreaded Applications](https://people.cs.umass.edu/~emery/pubs/berger-asplos2000.pdf)
 
-ASPLOS 2000
+_ASPLOS 2000_, Emery Berger, [Kathryn McKinley](https://www.cs.utexas.edu/~mckinley/), Robert Blumofe, and Paul Wilson
 
 > TL;DR - first truly scalable `malloc`
 
@@ -53,7 +53,8 @@ source: [https://github.com/emeryberger/Hoard](https://github.com/emeryberger/Ho
 
 ### [Composing High-Performance Memory Allocators](https://people.cs.umass.edu/~emery/pubs/berger-pldi2001.pdf) (Heap Layers)
 
-PLDI 2001
+_PLDI 2001_, Emery Berger, [Ben Zorn](https://www.microsoft.com/en-us/research/people/zorn/), [Kathryn McKinley](https://www.cs.utexas.edu/~mckinley/)
+
 
 > TL;DR - introduces Heap Layers, fast and flexible infrastructure for building allocators
 
@@ -82,7 +83,8 @@ source: [https://github.com/emeryberger/Heap-Layers](https://github.com/emeryber
 
 ### [Reconsidering Custom Memory Allocation](https://people.cs.umass.edu/~emery/pubs/berger-oopsla2002.pdf)
 
-OOPSLA 2002
+_OOPSLA 2002_, Emery Berger, [Ben Zorn](https://www.microsoft.com/en-us/research/people/zorn/), [Kathryn McKinley](https://www.cs.utexas.edu/~mckinley/)
+
 
 > TL;DR - empirical study showing most custom allocators are a waste of time and space
 
@@ -112,7 +114,7 @@ source (in Heap Layers repo): [https://github.com/emeryberger/Heap-Layers](https
 
 ### [Mesh: compacting memory management for C/C++ applications](https://people.cs.umass.edu/~mcgregor/papers/19-pldi.pdf)
 
-PLDI 2019
+_PLDI 2019_, Emery Berger and [Bobby Powers](https://bpowers.net/)
 
 > TL;DR - plug-in `malloc` that compacts memory safely in C/C++, where this was thought to be impossible
 
@@ -148,7 +150,7 @@ source: [https://github.com/plasma-umass/mesh](https://github.com/plasma-umass/m
 
 ### [DieHard: Probabilistic Memory Safety for Unsafe Languages](https://people.cs.umass.edu/~emery/pubs/fp014-berger.pdfhttps://people.cs.umass.edu/~emery/pubs/fp014-berger.pdf)
 
-PLDI 2006
+_PLDI 2006_, Emery Berger and [Ben Zorn](https://www.microsoft.com/en-us/research/people/zorn/)
 
 > TL;DR - a `malloc` that makes programs with memory errors likely to work
 
@@ -176,7 +178,8 @@ slides: [SlideShare](https://www.slideshare.net/emery/diehard-probabilistic-memo
 
 ### [Archipelago: Trading Address Space for Reliability and Security](https://people.cs.umass.edu/~emery/pubs/asplos147-lvin.pdf)
 
-ASPLOS 2008
+_ASPLOS 2008_, [Gene Novark](https://www.linkedin.com/in/gene-novark-183a4b20), Emery Berger and [Ben Zorn](https://www.microsoft.com/en-us/research/people/zorn/)
+
 
 > TL;DR - DieHard on steroids: uses virtual memory to effectively isolate all objects
 
@@ -201,10 +204,9 @@ video : [ASPLOS presentation by Gene Novark](https://dl.acm.org/doi/10.1145/1353
 
 ## Automatically correcting memory errors
 
-
 ### [Exterminator: Automatically Correcting Memory Errors with High Probability](https://people.cs.umass.edu/~emery/pubs/pldi028-novark.pdf)
 
-PLDI 2007 (CACM Research Highlight, 2008)
+_PLDI 2007 (CACM Research Highlight, 2008)_, [Gene Novark](https://www.linkedin.com/in/gene-novark-183a4b20), Emery Berger, [Ben Zorn](https://www.microsoft.com/en-us/research/people/zorn/)
 
 > TL;DR - uses statistical inference to isolate and repair memory errors
 
@@ -230,7 +232,7 @@ Source code in DieHard repo
 
 ### [DieHarder: Securing the Heap](https://people.cs.umass.edu/~emery/pubs/ccs03-novark.pdf)
 
-CCS 2010
+_CCS 2010_, [Gene Novark](https://www.linkedin.com/in/gene-novark-183a4b20), Emery Berger
 
 > TL;DR - A secure `malloc` that is resilient to a variety of attacks
 
@@ -260,7 +262,7 @@ source in DieHard repo: [https://github.com/emeryberger/DieHard](https://github.
 
 ### [Stabilizer: Statistically Sound Performance Evaluation](http://www.cs.umass.edu/~emery/pubs/stabilizer-asplos13.pdf)
 
-ASPLOS 2013
+_ASPLOS 2013_, [Charlie Curtsinger](https://curtsinger.cs.grinnell.edu/) and Emery Berger
 
 > TL;DR - repeatedly randomizing objects in memory enables sound performance analysis
 
